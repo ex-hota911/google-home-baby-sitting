@@ -1,0 +1,16 @@
+
+{
+  "name": "google-home-baby-sit",
+  "version": "1.0.0",
+  "description": "Google Home Utilities for baby sitting",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+	  "scan": "dash-button scan"
+  },
+  "author": "Hiroyuki Ota",
+  "license": "MIT",
+  "dependencies": {
+    "dash-button": "^3.2.0"
+  }
+}
