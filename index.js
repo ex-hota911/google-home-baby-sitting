@@ -4,12 +4,12 @@
 const DashButton = require('dash-button');
 const GoogleHome = require('google-home-notifier');
 
-if (process.argv.length < 3) {
+const DASH_BUTTON_MAC_ADDRESS = process.env.DASH_BUTTON_MAC_ADDRESS
+if (!DASH_BUTTON_MAC_ADDRESS) {
 	console.log("Usage: node index.js $DASH_BUTTON_MAC_ADDRESS");
 	console.log("  You can get the address by running 'npm scan'");
 	process.exit(1);
 }
-const DASH_BUTTON_MAC_ADDRESS = process.argv[2];
 
 const button = new DashButton(DASH_BUTTON_MAC_ADDRESS);
 
